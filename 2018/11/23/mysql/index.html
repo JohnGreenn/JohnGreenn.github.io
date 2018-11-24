@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>MySql的总结 | Christinao</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="MySql的总结 | Christinao">
+    <meta name="twitter:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="MySql的总结 | Christinao">
+    <meta property="og:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    
+    <meta name="author" content="Christinao">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Christinao" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://christiano.cn/2018/11/23/mysql/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Christinao 的主页"><img src="/images/avatar.jpg" width="80" alt="Christinao logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Christinao">Christinao</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, Stay foolish</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">我挥舞着键盘和本子，<br>发誓要把世界写个明明白白。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/JohnGreenn" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-11-23T11:49:47.000Z" class="post-list__meta--date date">2018-11-23</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/mysql/">mysql</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">MySql的总结</h1>
+  </header>
+
+  <section class="post">
+    <blockquote>
+<p>前言</p>
+</blockquote>
+<p><a href="https://www.bilibili.com/video/av35765842/?p=14" title="2018传智播客人工智能15期就业班-part5-MySQL数据库" target="_blank" rel="noopener">https://www.bilibili.com/video/av35765842/?p=14</a></p>
+<h2 id="1-数据库操作"><a href="#1-数据库操作" class="headerlink" title="1.数据库操作"></a>1.数据库操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">show databases;</span><br><span class="line">use [databasename];</span><br><span class="line">create database  [name];</span><br><span class="line">drop database [name];</span><br></pre></td></tr></table></figure>
+<h2 id="2-数据表操作"><a href="#2-数据表操作" class="headerlink" title="2.数据表操作"></a>2.数据表操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">show tables;</span><br><span class="line"> </span><br><span class="line">create table students</span><br><span class="line">    (</span><br><span class="line">        id int  not null auto_increment primary key,</span><br><span class="line">        name char(20) not null,</span><br><span class="line">        high decimal(5,2),</span><br><span class="line">        gender enum(&apos;男&apos;,&apos;女&apos;,&apos;保密&apos;) default &apos;保密&apos;,</span><br><span class="line">        age tinyint unsigned not null,</span><br><span class="line">        tel char(13) null default &quot;-&quot;</span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
+<p>–删除数据表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table students;</span><br></pre></td></tr></table></figure></p>
+<p>–查看表的结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc students;</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-数据操作"><a href="#3-数据操作" class="headerlink" title="3.数据操作"></a>3.数据操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into students(id,name,high,gender,age,tel) values(0,&apos;Christiano&apos;,178.50,&apos;男&apos;,17,&apos;151515151&apos;);</span><br></pre></td></tr></table></figure>
+<p>–修改表-添加字段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students add birthday date;</span><br></pre></td></tr></table></figure></p>
+<p>–修改表-添加字段:不重名版<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students modify birthday date;</span><br></pre></td></tr></table></figure></p>
+<p>–修改表-添加字段:重名版<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students change birthday date date default &apos;2000-01-01&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>–修改表、删除字段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table students drop birthday;</span><br></pre></td></tr></table></figure></p>
+<p>–删除指定id数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from students where id =2;</span><br></pre></td></tr></table></figure></p>
+<p>–查看创建数据库的语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show create table students;</span><br></pre></td></tr></table></figure></p>
+<h3 id="增删改查（curd）"><a href="#增删改查（curd）" class="headerlink" title="增删改查（curd）"></a>增删改查（curd）</h3><p>1.增加</p>
+<p>–全列插入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into 表名 values(...)</span><br></pre></td></tr></table></figure></p>
+<p>–部分插入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">insert into 表名 (列1....) values(值1...);</span><br><span class="line">insert into students (name,gender) values(&apos;马化腾&apos;,&apos;男&apos;);</span><br><span class="line"></span><br><span class="line">inert into students values(default,&apos;马云&apos;,55,&apos;男&apos;);</span><br><span class="line">枚举中的下标从1 开始 1--&apos;男&apos; 2--&gt;&apos;女&apos;...</span><br><span class="line">inert into students values(default,&apos;马云&apos;,55,1);</span><br></pre></td></tr></table></figure></p>
+<p>–多行插入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into students values(...),(...);</span><br></pre></td></tr></table></figure></p>
+<p>2.修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">update students set gender=1; --全部修改</span><br><span class="line">update students set gender=1 where name=&apos;马云&apos;; </span><br><span class="line">update students set name = &apos;sb&apos; where id =1;</span><br></pre></td></tr></table></figure></p>
+<p>3.删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete from students; --全删</span><br><span class="line">delete from students where id =2;</span><br></pre></td></tr></table></figure></p>
+<p>4.查询</p>
+<p>–查询所有<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students;</span><br></pre></td></tr></table></figure></p>
+<p>–定条件查询<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from students where name=&apos;马云&apos;;</span><br><span class="line">select * from students where id&gt;3=&apos;马云&apos;;</span><br></pre></td></tr></table></figure></p>
+<p>–查询指定的列<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name,gender from student;</span><br></pre></td></tr></table></figure></p>
+<p>–可以使用as为列表或表指定别名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name as 姓名,gender as 性别 from students;</span><br></pre></td></tr></table></figure></p>
+<p>–字段的顺序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select id as 序号,gender as 性别,name as 姓名 from students;</span><br></pre></td></tr></table></figure></p>
+<p>–消除重复行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select distinct gender from students;</span><br></pre></td></tr></table></figure></p>
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><p>1.比较运算符</p>
+<p>– &gt;, &lt;, &gt;=, &lt;=, = ,!= 或者 &lt;&gt; </p>
+<p>2.逻辑运算符</p>
+<p>– and, or, not</p>
+<p>– 年龄不是小于或者等于18 并且是女性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-- select * from students where not age&lt;=18 and gender=2;</span><br></pre></td></tr></table></figure></p>
+<p>3.模糊查询<br>– like</p>
+<p>– % 替换1个或者多个</p>
+<p>– _替换一个</p>
+<p>– 查询至少2个字的名字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select from students where name like &quot;__%&quot;</span><br></pre></td></tr></table></figure></p>
+<p>– rlike 正则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-- 查询以 周 开始的姓名</span><br><span class="line">select name from students where name rlike &quot;^周.*&quot;;</span><br><span class="line"></span><br><span class="line">--查询以 周开始、伦结尾的名字</span><br><span class="line">select name from students where name rlike &quot;^周.*伦$&quot;;</span><br></pre></td></tr></table></figure></p>
+<p>4.范围查询</p>
+<p>– in(1,3,8)表示在一个非连续的范围内<br>– 查询年龄为18/34的姓名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name,age from students where age in(12,18,34);</span><br></pre></td></tr></table></figure></p>
+<p>– not in 不非连续的范围之内</p>
+<p>– between… and … 表示在一个连续的范围内<br>– 查询 年龄在18到34之间的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select name,age from students where age between 18 and 34;</span><br></pre></td></tr></table></figure></p>
+<p>– not between … and …表示在一个连续的范围内</p>
+<p>– 空判断<br>    –判空is null<br>    –非空is not null</p>
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>– order by 字段<br>– asc 从小到大排列，即升序<br>– desc 从大到小排序，即降序</p>
+<p>–查询 年龄在18到34岁之间的男性信息，按照年龄从小到大排序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students where (age between 18 and 34) and gender=1 order by age asc;</span><br></pre></td></tr></table></figure></p>
+<p>– order by 多个字段<br>– 查询年龄在18到34岁之间的女性，身高从高到矮排序，如果身高相同情况下按照年龄从大到小排序；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students where (age between 18 and 34) and gender=2 order by height desc,id desc;</span><br></pre></td></tr></table></figure></p>
+<h3 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h3><p>– limit start, count<br>– 限制查询出来的数据个数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students where gender=1 limit 2;</span><br></pre></td></tr></table></figure></p>
+<p>– 查询前5个数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students limit 0, 5;</span><br></pre></td></tr></table></figure></p>
+<h3 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h3><p>– inner join … on<br>– 查询 有能够对应班级的学生以及班级信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students inner join classes on students.cls_id=classes.id;</span><br></pre></td></tr></table></figure></p>
+<p>– 按照要求显示姓名、班级<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select students.*,classes.name from students inner join classes on students.cls_id=classes.id;</span><br></pre></td></tr></table></figure></p>
+<p>– left join … on<br>– 查询每位学生对应的班级信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select * from students as s left join classes as c on s.cls_id = c.id;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">-- 查询没有对应班级信息的学生</span><br><span class="line">-- select ... from xxx as s left join classes as c on ...where...</span><br><span class="line">-- select ... from xxx as s left join classes as c on ...where...</span><br></pre></td></tr></table></figure></p>
+<p>select * from students as s left join classes as c on s.cls_id = c.id having c.id is null;<br><code>`</code></p>
+<p>– right join … on</p>
+<p>相关文章：<a href="//monniya.com/2016/03/29/theme-vno-diy2/">vno主题优化(二) 添加上下篇导航及优化disqus速度</a><br>相关文章：<a href="//monniya.com/2016/06/14/article-analytics/">vno主题优化(三) 添加博客统计</a></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/11/19/hello-hexo-Welcome-to-my-home/" title="hello,hexo. Welcome to my home">hello,hexo. Welcome to my home</a></h2>
+                <p class="excerpt">
+                
+                
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-11-19T13:34:13.000Z" class="post-list__meta--date date">2018-11-19</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/11/19/hello-hexo-Welcome-to-my-home/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'chritiano'; 
+      
+  var disqus_identifier = '/2018/11/23/mysql/';
+  var disqus_title = 'MySql的总结';
+  var disqus_url = 'http://christiano.cn/2018/11/23/mysql/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Christinao - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建， 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d267e0894afecccc89fcbe5096ea3887";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
