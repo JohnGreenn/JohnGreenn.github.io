@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Python基础-15_名片管理系统 | Christinao</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Python基础-15_名片管理系统 | Christinao">
+    <meta name="twitter:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Python基础-15_名片管理系统 | Christinao">
+    <meta property="og:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    
+    <meta name="author" content="Christinao">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Christinao" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://christiano.cn/2018/08/14/14_综合应用 —— 名片管理系统/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Christinao 的主页"><img src="/images/avatar.jpg" width="80" alt="Christinao logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Christinao">Christinao</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, Stay foolish</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">我挥舞着键盘和本子，<br>发誓要把世界写个明明白白。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/JohnGreenn" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-08-14T03:00:00.000Z" class="post-list__meta--date date">2018-08-14</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Python基础-15_名片管理系统</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="综合应用-——-名片管理系统"><a href="#综合应用-——-名片管理系统" class="headerlink" title="综合应用 —— 名片管理系统"></a>综合应用 —— 名片管理系统</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>综合应用已经学习过的知识点：</p>
+<ul>
+<li><strong>变量</strong></li>
+<li><strong>流程控制</strong></li>
+<li><strong>函数</strong></li>
+<li><strong>模块</strong></li>
+</ul>
+<p>开发 <strong>名片管理系统</strong></p>
+<h2 id="系统需求"><a href="#系统需求" class="headerlink" title="系统需求"></a>系统需求</h2><ul>
+<li><ol>
+<li>程序启动，显示名片管理系统欢迎界面，并显示功能菜单</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">**************************************************</span><br><span class="line">欢迎使用【名片管理系统】V1.0</span><br><span class="line"></span><br><span class="line">1. 新建名片</span><br><span class="line">2. 显示全部</span><br><span class="line">3. 查询名片</span><br><span class="line"></span><br><span class="line">0. 退出系统</span><br><span class="line">**************************************************</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol start="2">
+<li>用户用数字选择不同的功能</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>根据功能选择，执行不同的功能</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>用户名片需要记录用户的 <strong>姓名</strong>、<strong>电话</strong>、<strong>QQ</strong>、<strong>邮件</strong></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>如果查询到指定的名片，用户可以选择 <strong>修改</strong> 或者 <strong>删除</strong> 名片</li>
+</ol>
+</li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>框架搭建</li>
+<li>新增名片</li>
+<li>显示所有名片</li>
+<li>查询名片</li>
+<li>查询成功后修改、删除名片</li>
+<li>让 Python 程序能够直接运行</li>
+</ol>
+<h2 id="01-框架搭建"><a href="#01-框架搭建" class="headerlink" title="01. 框架搭建"></a>01. 框架搭建</h2><p><strong>目标</strong></p>
+<ul>
+<li>搭建名片管理系统 <strong>框架结构</strong><ol>
+<li><strong>准备文件</strong>，确定文件名，保证能够 <strong>在需要的位置</strong> 编写代码</li>
+<li>编写 <strong>主运行循环</strong>，实现基本的 <strong>用户输入和判断</strong></li>
+</ol>
+</li>
+</ul>
+<h3 id="1-1-文件准备"><a href="#1-1-文件准备" class="headerlink" title="1.1 文件准备"></a>1.1 文件准备</h3><ol>
+<li>新建 <code>cards_main.py</code> 保存 <strong>主程序功能代码</strong><ul>
+<li>程序的入口</li>
+<li>每一次启动名片管理系统都通过 <code>main</code> 这个文件启动 </li>
+</ul>
+</li>
+<li>新建 <code>cards_tools.py</code> 保存 <strong>所有名片功能函数</strong><ul>
+<li>将对名片的 <strong>新增</strong>、<strong>查询</strong>、<strong>修改</strong>、<strong>删除</strong> 等功能封装在不同的函数中</li>
+</ul>
+</li>
+</ol>
+<h3 id="1-2-编写主运行循环"><a href="#1-2-编写主运行循环" class="headerlink" title="1.2 编写主运行循环"></a>1.2 编写主运行循环</h3><ul>
+<li>在 <code>cards_main</code> 中添加一个 <strong>无限循环</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment"># TODO(小明) 显示系统菜单</span></span><br><span class="line"></span><br><span class="line">    action = input(<span class="string">"请选择操作功能："</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"您选择的操作是：%s"</span> % action)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 根据用户输入决定后续的操作</span></span><br><span class="line">    <span class="keyword">if</span> action <span class="keyword">in</span> [<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>]:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">elif</span> action == <span class="string">"0"</span>:</span><br><span class="line">        print(<span class="string">"欢迎再次使用【名片管理系统】"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"输入错误，请重新输入"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="字符串判断"><a href="#字符串判断" class="headerlink" title="字符串判断"></a>字符串判断</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> action <span class="keyword">in</span> [<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>]:</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> action == <span class="string">"1"</span> <span class="keyword">or</span> action == <span class="string">"2"</span> <span class="keyword">or</span> action == <span class="string">"3"</span>:</span><br></pre></td></tr></table></figure>
+<ol>
+<li>使用 <code>in</code> 针对 <strong>列表</strong> 判断，避免使用 <code>or</code> 拼接复杂的逻辑条件</li>
+<li>没有使用 <code>int</code> 转换用户输入，可以避免 <strong>一旦用户输入的不是数字</strong>，导致程序运行出错</li>
+</ol>
+<h4 id="pass"><a href="#pass" class="headerlink" title="pass"></a>pass</h4><ul>
+<li><code>pass</code> 就是一个空语句，不做任何事情，一般用做占位语句</li>
+<li>是为了保持程序结构的完整性</li>
+</ul>
+<h4 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h4><ul>
+<li>在开发软件时，如果 <strong>不希望程序执行后</strong> 立即退出</li>
+<li>可以在程序中增加一个 <strong>无限循环</strong></li>
+<li><strong>由用户来决定</strong> 退出程序的时机</li>
+</ul>
+<h4 id="TODO-注释"><a href="#TODO-注释" class="headerlink" title="TODO 注释"></a>TODO 注释</h4><ul>
+<li>在 <code>#</code> 后跟上 <code>TODO</code>，用于标记需要去做的工作</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TODO(作者/邮件) 显示系统菜单</span></span><br></pre></td></tr></table></figure>
+<h3 id="1-3-在-cards-tools-中增加四个新函数"><a href="#1-3-在-cards-tools-中增加四个新函数" class="headerlink" title="1.3 在 cards_tools 中增加四个新函数"></a>1.3 在 <code>cards_tools</code> 中增加四个新函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_menu</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""显示菜单</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">new_card</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""新建名片</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：新建名片"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_all</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""显示全部</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：显示全部"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">search_card</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""搜索名片</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：搜索名片"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-导入模块"><a href="#1-4-导入模块" class="headerlink" title="1.4 导入模块"></a>1.4 导入模块</h3><ul>
+<li>在 <code>cards_main.py</code> 中使用 <code>import</code> 导入 <code>cards_tools</code> 模块</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cards_tools</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">* 修改 `<span class="keyword">while</span>` 循环的代码如下：</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"><span class="keyword">import</span> cards_tools</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line"></span><br><span class="line">    cards_tools.show_menu()</span><br><span class="line"></span><br><span class="line">    action = input(<span class="string">"请选择操作功能："</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"您选择的操作是：%s"</span> % action)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 根据用户输入决定后续的操作</span></span><br><span class="line">    <span class="keyword">if</span> action <span class="keyword">in</span> [<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>]:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> action == <span class="string">"1"</span>:</span><br><span class="line">            cards_tools.new_card()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">elif</span> action == <span class="string">"2"</span>:</span><br><span class="line">            cards_tools.show_all()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">elif</span> action == <span class="string">"3"</span>:</span><br><span class="line">            cards_tools.search_card()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> action == <span class="string">"0"</span>:</span><br><span class="line">        print(<span class="string">"欢迎再次使用【名片管理系统】"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"输入错误，请重新输入："</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>至此：<code>cards_main</code> 中的所有代码全部开发完毕！</p>
+</blockquote>
+<h3 id="1-5-完成-show-menu-函数"><a href="#1-5-完成-show-menu-函数" class="headerlink" title="1.5 完成 show_menu 函数"></a>1.5 完成 <code>show_menu</code> 函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_menu</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""显示菜单</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"*"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"欢迎使用【菜单管理系统】V1.0"</span>)</span><br><span class="line">    print(<span class="string">""</span>)</span><br><span class="line">    print(<span class="string">"1. 新建名片"</span>)</span><br><span class="line">    print(<span class="string">"2. 显示全部"</span>)</span><br><span class="line">    print(<span class="string">"3. 查询名片"</span>)</span><br><span class="line">    print(<span class="string">""</span>)</span><br><span class="line">    print(<span class="string">"0. 退出系统"</span>)</span><br><span class="line">    print(<span class="string">"*"</span> * <span class="number">50</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="02-保存名片数据的结构"><a href="#02-保存名片数据的结构" class="headerlink" title="02. 保存名片数据的结构"></a>02. 保存名片数据的结构</h2><p><strong>程序就是用来处理数据的，而变量就是用来存储数据的</strong></p>
+<ul>
+<li>使用 <strong>字典</strong> 记录 <strong>每一张名片</strong> 的详细信息</li>
+<li>使用 <strong>列表</strong> 统一记录所有的 <strong>名片字典</strong></li>
+</ul>
+<p><img src="https://i.imgur.com/NwwstcF.png" alt=""></p>
+<h3 id="定义名片列表变量"><a href="#定义名片列表变量" class="headerlink" title="定义名片列表变量"></a>定义名片列表变量</h3><ul>
+<li>在 <code>cards_tools</code> 文件的顶部增加一个 <strong>列表变量</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 所有名片记录的列表</span></span><br><span class="line">card_list = []</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong></p>
+<ol>
+<li><strong>所有名片相关操作</strong>，都需要使用这个列表，所以应该 <strong>定义在程序的顶部</strong></li>
+<li><strong>程序刚运行时，没有数据</strong>，所以是 <strong>空列表</strong></li>
+</ol>
+<h2 id="03-新增名片"><a href="#03-新增名片" class="headerlink" title="03. 新增名片"></a>03. 新增名片</h2><h3 id="3-1-功能分析"><a href="#3-1-功能分析" class="headerlink" title="3.1 功能分析"></a>3.1 功能分析</h3><ol>
+<li>提示用户依次输入名片信息</li>
+<li>将名片信息保存到一个字典</li>
+<li>将字典添加到名片列表</li>
+<li>提示名片添加完成</li>
+</ol>
+<h3 id="3-2-实现-new-card-方法"><a href="#3-2-实现-new-card-方法" class="headerlink" title="3.2 实现 new_card 方法"></a>3.2 实现 new_card 方法</h3><ul>
+<li>根据步骤实现代码</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">new_card</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""新建名片</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：新建名片"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 提示用户输入名片信息</span></span><br><span class="line">    name = input(<span class="string">"请输入姓名："</span>)</span><br><span class="line">    phone = input(<span class="string">"请输入电话："</span>)</span><br><span class="line">    qq = input(<span class="string">"请输入 QQ 号码："</span>)</span><br><span class="line">    email = input(<span class="string">"请输入邮箱："</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 将用户信息保存到一个字典</span></span><br><span class="line">    card_dict = &#123;<span class="string">"name"</span>: name,</span><br><span class="line">                 <span class="string">"phone"</span>: phone,</span><br><span class="line">                 <span class="string">"qq"</span>: qq,</span><br><span class="line">                 <span class="string">"email"</span>: email&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 3. 将用户字典添加到名片列表</span></span><br><span class="line">    card_list.append(card_dict)</span><br><span class="line"></span><br><span class="line">    print(card_list)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 4. 提示添加成功信息</span></span><br><span class="line">    print(<span class="string">"成功添加 %s 的名片"</span> % card_dict[<span class="string">"name"</span>])</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>技巧：在 <code>PyCharm</code> 中，可以使用 <code>SHIFT + F6</code> 统一修改变量名</p>
+</blockquote>
+<h2 id="04-显示所有名片"><a href="#04-显示所有名片" class="headerlink" title="04. 显示所有名片"></a>04. 显示所有名片</h2><h3 id="4-1-功能分析"><a href="#4-1-功能分析" class="headerlink" title="4.1 功能分析"></a>4.1 功能分析</h3><ul>
+<li>循环遍历名片列表，顺序显示每一个字典的信息</li>
+</ul>
+<h3 id="4-2-基础代码实现"><a href="#4-2-基础代码实现" class="headerlink" title="4.2 基础代码实现"></a>4.2 基础代码实现</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_all</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""显示全部</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：显示全部"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> card_dict <span class="keyword">in</span> card_list:</span><br><span class="line"></span><br><span class="line">        print(card_dict)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>显示效果不好！</li>
+</ul>
+<h3 id="4-3-增加标题和使用-t-显示"><a href="#4-3-增加标题和使用-t-显示" class="headerlink" title="4.3 增加标题和使用 \t 显示"></a>4.3 增加标题和使用 <code>\t</code> 显示</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_all</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""显示全部</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：显示全部"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打印表头</span></span><br><span class="line">    <span class="keyword">for</span> name <span class="keyword">in</span> [<span class="string">"姓名"</span>, <span class="string">"电话"</span>, <span class="string">"QQ"</span>, <span class="string">"邮箱"</span>]:</span><br><span class="line">        print(name, end=<span class="string">"\t\t"</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">""</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打印分隔线</span></span><br><span class="line">    print(<span class="string">"="</span> * <span class="number">50</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> card_dict <span class="keyword">in</span> card_list:</span><br><span class="line"></span><br><span class="line">        print(<span class="string">"%s\t\t%s\t\t%s\t\t%s"</span> % (card_dict[<span class="string">"name"</span>],</span><br><span class="line">                                        card_dict[<span class="string">"phone"</span>],</span><br><span class="line">                                        card_dict[<span class="string">"qq"</span>],</span><br><span class="line">                                        card_dict[<span class="string">"email"</span>]))</span><br></pre></td></tr></table></figure>
+<h3 id="4-4-增加没有名片记录判断"><a href="#4-4-增加没有名片记录判断" class="headerlink" title="4.4 增加没有名片记录判断"></a>4.4 增加没有名片记录判断</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">show_all</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">"""显示全部</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：显示全部"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 判断是否有名片记录</span></span><br><span class="line">    <span class="keyword">if</span> len(card_list) == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">"提示：没有任何名片记录"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong></p>
+<ul>
+<li>在函数中使用 <code>return</code> 表示返回</li>
+<li>如果在 <code>return</code> 后没有跟任何内容，只是表示该函数执行到此就不再执行后续的代码</li>
+</ul>
+<h2 id="05-查询名片"><a href="#05-查询名片" class="headerlink" title="05. 查询名片"></a>05. 查询名片</h2><h3 id="5-1-功能分析"><a href="#5-1-功能分析" class="headerlink" title="5.1 功能分析"></a>5.1 功能分析</h3><ol>
+<li>提示用户要搜索的姓名</li>
+<li>根据用户输入的姓名遍历列表</li>
+<li>搜索到指定的名片后，再执行后续的操作</li>
+</ol>
+<h3 id="5-2-代码实现"><a href="#5-2-代码实现" class="headerlink" title="5.2 代码实现"></a>5.2 代码实现</h3><ul>
+<li>查询功能实现</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">search_card</span><span class="params">()</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""搜索名片</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">"-"</span> * <span class="number">50</span>)</span><br><span class="line">    print(<span class="string">"功能：搜索名片"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 提示要搜索的姓名</span></span><br><span class="line">    find_name = input(<span class="string">"请输入要搜索的姓名："</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 遍历字典</span></span><br><span class="line">    <span class="keyword">for</span> card_dict <span class="keyword">in</span> card_list:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> card_dict[<span class="string">"name"</span>] == find_name:</span><br><span class="line"></span><br><span class="line">            print(<span class="string">"姓名\t\t\t电话\t\t\tQQ\t\t\t邮箱"</span>)</span><br><span class="line">            print(<span class="string">"-"</span> * <span class="number">40</span>)</span><br><span class="line">            </span><br><span class="line">            print(<span class="string">"%s\t\t\t%s\t\t\t%s\t\t\t%s"</span> % (</span><br><span class="line">                card_dict[<span class="string">"name"</span>],</span><br><span class="line">                card_dict[<span class="string">"phone"</span>],</span><br><span class="line">                card_dict[<span class="string">"qq"</span>],</span><br><span class="line">                card_dict[<span class="string">"email"</span>]))</span><br><span class="line"></span><br><span class="line">            print(<span class="string">"-"</span> * <span class="number">40</span>)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># TODO(小明) 针对找到的字典进行后续操作：修改/删除</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"没有找到 %s"</span> % find_name)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>增加名片操作函数：<strong>修改</strong>/<strong>删除</strong>/<strong>返回主菜单</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">deal_card</span><span class="params">(find_dict)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""操作搜索到的名片字典</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    :param find_dict:找到的名片字典</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(find_dict)</span><br><span class="line"></span><br><span class="line">    action_str = input(<span class="string">"请选择要执行的操作 "</span></span><br><span class="line">                       <span class="string">"[1] 修改 [2] 删除 [0] 返回上级菜单"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> action == <span class="string">"1"</span>:</span><br><span class="line">        print(<span class="string">"修改"</span>)</span><br><span class="line">    <span class="keyword">elif</span> action == <span class="string">"2"</span>:</span><br><span class="line">        print(<span class="string">"删除"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="06-修改和删除"><a href="#06-修改和删除" class="headerlink" title="06. 修改和删除"></a>06. 修改和删除</h2><h3 id="6-1-查询成功后删除名片"><a href="#6-1-查询成功后删除名片" class="headerlink" title="6.1 查询成功后删除名片"></a>6.1 查询成功后删除名片</h3><ul>
+<li>由于找到的字典记录已经在列表中保存</li>
+<li>要删除名片记录，只需要把列表中对应的字典删除即可</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">elif</span> action == <span class="string">"2"</span>:</span><br><span class="line">    card_list.remove(find_dict)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"删除成功"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-修改名片"><a href="#6-2-修改名片" class="headerlink" title="6.2 修改名片"></a>6.2 修改名片</h3><ul>
+<li>由于找到的字典记录已经在列表中保存</li>
+<li>要修改名片记录，只需要把列表中对应的字典中每一个键值对的数据修改即可</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> action == <span class="string">"1"</span>:</span><br><span class="line"></span><br><span class="line">    find_dict[<span class="string">"name"</span>] = input(<span class="string">"请输入姓名："</span>)</span><br><span class="line">    find_dict[<span class="string">"phone"</span>] = input(<span class="string">"请输入电话："</span>)</span><br><span class="line">    find_dict[<span class="string">"qq"</span>] = input(<span class="string">"请输入QQ："</span>)</span><br><span class="line">    find_dict[<span class="string">"email"</span>] = input(<span class="string">"请输入邮件："</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"%s 的名片修改成功"</span> % find_dict[<span class="string">"name"</span>])</span><br></pre></td></tr></table></figure>
+<h4 id="修改名片细化"><a href="#修改名片细化" class="headerlink" title="修改名片细化"></a>修改名片细化</h4><ul>
+<li><strong>如果用户在使用时，某些名片内容并不想修改</strong>，应该如何做呢？—— 既然系统提供的 <code>input</code> 函数不能满足需求，那么就新定义一个函数 <code>input_card_info</code> 对系统的 <code>input</code> 函数进行扩展</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">input_card_info</span><span class="params">(dict_value, tip_message)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="string">"""输入名片信息</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    :param dict_value: 字典原有值</span></span><br><span class="line"><span class="string">    :param tip_message: 输入提示信息</span></span><br><span class="line"><span class="string">    :return: 如果输入，返回输入内容，否则返回字典原有值</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment"># 1. 提示用户输入内容</span></span><br><span class="line">    result_str = input(tip_message)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 2. 针对用户的输入进行判断，如果用户输入了内容，直接返回结果</span></span><br><span class="line">    <span class="keyword">if</span> len(result_str) &gt; <span class="number">0</span>:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result_str</span><br><span class="line">    <span class="comment"># 3. 如果用户没有输入内容，返回 `字典中原有的值`</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dict_value</span><br></pre></td></tr></table></figure>
+<h2 id="07-LINUX-上的-Shebang-符号"><a href="#07-LINUX-上的-Shebang-符号" class="headerlink" title="07. LINUX 上的 Shebang 符号(#!)"></a>07. LINUX 上的 <code>Shebang</code> 符号(<code>#!</code>)</h2><ul>
+<li><code>#!</code>这个符号叫做 <code>Shebang</code> 或者 <code>Sha-bang</code></li>
+<li><code>Shebang</code> 通常在 <code>Unix</code> 系统脚本的中 <strong>第一行开头</strong> 使用</li>
+<li>指明 <strong>执行这个脚本文件</strong> 的 <strong>解释程序</strong></li>
+</ul>
+<h3 id="使用-Shebang-的步骤"><a href="#使用-Shebang-的步骤" class="headerlink" title="使用 Shebang 的步骤"></a>使用 Shebang 的步骤</h3><ul>
+<li><ol>
+<li>使用 <code>which</code> 查询 <code>python3</code> 解释器所在路径</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">which</span> python3</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol start="2">
+<li>修改要运行的 <strong>主 python 文件</strong>，在第一行增加以下内容</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#! /usr/bin/python3</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol start="3">
+<li>修改 <strong>主 python 文件</strong> 的文件权限，增加执行权限</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chmod +x cards_main.py</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol start="4">
+<li>在需要时执行程序即可</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./cards_main.py</span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/08/15/15变量进阶（理解）/" title="Python基础-16_变量进阶（理解）">Python基础-16_变量进阶（理解）</a></h2>
+                <p class="excerpt">
+                
+                变量进阶（理解）目标
+变量的引用
+可变和不可变类型
+局部变量和全局变量
+
+01. 变量的引用
+
+变量 和 数据 都是保存在 内存 中的
+在 Python 中 函数 的 参数传递 以及 返回值 都是靠 引用 传递的
+
+
+1.1 引用的概念在 Python 中
+
+变量 和 数据 是分开存储的
+数据 保存
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-08-15T03:00:00.000Z" class="post-list__meta--date date">2018-08-15</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/15/15变量进阶（理解）/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/08/13/13_高级变量类型/" title="Python基础-13_高级变量类型">Python基础-13_高级变量类型</a></h2>
+                <p class="excerpt">
+                
+                高级变量类型目标
+列表
+元组
+字典
+字符串
+公共方法
+变量高级
+
+知识点回顾
+Python 中数据类型可以分为 数字型 和 非数字型
+数字型
+整型 (int)
+浮点型（float）
+布尔型（bool） 
+真 True 非 0 数 —— 非零即真
+假 False 0
+
+
+复数型 (complex)
+主
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-08-13T03:00:00.000Z" class="post-list__meta--date date">2018-08-13</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/13/13_高级变量类型/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'chritiano'; 
+      
+  var disqus_identifier = '/2018/08/14/14_综合应用 —— 名片管理系统/';
+  var disqus_title = 'Python基础-15_名片管理系统';
+  var disqus_url = 'http://christiano.cn/2018/08/14/14_综合应用 —— 名片管理系统/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Christinao - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建， 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d267e0894afecccc89fcbe5096ea3887";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

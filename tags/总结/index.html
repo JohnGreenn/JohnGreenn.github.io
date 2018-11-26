@@ -172,61 +172,314 @@ I am a slow walker,but I never walk backwards. ( America)——我走得很慢�
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/08/03/02_第一个 Python 程序/" title="link to post.title">Python基础-02_第一个Python程序</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/16/16函数进阶/" title="link to post.title">Python基础-16_函数进阶</a></h2>
       <p class="excerpt">
     
-      第一个 Python 程序目标
-第一个 HelloPython 程序
-Python 2.x 与 3​​.x 版本简介
-执行 Python 程序的三种方式
-解释器 —— python / python3
-交互式 —— ipython
-集成开发环境 —— PyCharm
+      函数进阶目标
+函数参数和返回值的作用
+函数的返回值 进阶
+函数的参数 进阶
+递归函数
+
+01. 函数参数和返回值的作用函数根据 有没有参数 以及 有没有返回值，可以 相互组合，一共有 4 种 组合形式
+
+无参数，无返回值
+无参数，有返回值
+有参数，无返回值
+有参数，有返回值
 
 
 
-01. 第一个 HelloPython 程序1.1 Python 源程序的基本概念
-Python 源程序就是一个特殊格式的文本
+定义函数时，是否接收参数，或者是否返回结果，是根据 实际的功能需求 来决定的！
+
+
+如果函数 内部处理的数据不确定，就
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-08-03T04:00:00.000Z" class="post-list__meta--date date">2018-08-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+      <div class="post-list__meta"><time datetime="2018-08-16T03:00:00.000Z" class="post-list__meta--date date">2018-08-16</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
-</span><a class="btn-border-small" href="/2018/08/03/02_第一个 Python 程序/">继续阅读</a></div>
+</span><a class="btn-border-small" href="/2018/08/16/16函数进阶/">继续阅读</a></div>
       <hr class="post-list__divider">
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/08/03/01_认识 Python/" title="link to post.title">Python基础-01_认识Python</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/15/15变量进阶（理解）/" title="link to post.title">Python基础-16_变量进阶（理解）</a></h2>
       <p class="excerpt">
     
-      认识 Python
-人生苦短，我用 Python —— Life is short, you need Python
+      变量进阶（理解）目标
+变量的引用
+可变和不可变类型
+局部变量和全局变量
+
+01. 变量的引用
+
+变量 和 数据 都是保存在 内存 中的
+在 Python 中 函数 的 参数传递 以及 返回值 都是靠 引用 传递的
 
 
-目标
-Python 的起源
-为什么要用 Python？
-Python 的特点
-Python 的优缺点
+1.1 引用的概念在 Python 中
 
-01. Python 的起源
-Python 的创始人为吉多·范罗苏姆（Guido van Rossum）
-
-
-
-1989 年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时
+变量 和 数据 是分开存储的
+数据 保存在内存中的一个位置
+变量 中保存着数据在内存中的地址
+变量 中 记录数据的地址，就叫做 引用
+使用 
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-08-03T03:00:00.000Z" class="post-list__meta--date date">2018-08-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+      <div class="post-list__meta"><time datetime="2018-08-15T03:00:00.000Z" class="post-list__meta--date date">2018-08-15</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
-</span><a class="btn-border-small" href="/2018/08/03/01_认识 Python/">继续阅读</a></div>
+</span><a class="btn-border-small" href="/2018/08/15/15变量进阶（理解）/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/14/14_综合应用 —— 名片管理系统/" title="link to post.title">Python基础-15_名片管理系统</a></h2>
+      <p class="excerpt">
+    
+      综合应用 —— 名片管理系统目标综合应用已经学习过的知识点：
+
+变量
+流程控制
+函数
+模块
+
+开发 名片管理系统
+系统需求
+
+程序启动，显示名片管理系统欢迎界面，并显示功能菜单
+
+
+
+123456789**************************************************欢迎使用【名片管理系统】V1.01. 新建名片2. 显示全部3. 查询名片0. 退出系统*****
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-14T03:00:00.000Z" class="post-list__meta--date date">2018-08-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/14/14_综合应用 —— 名片管理系统/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/13/13_高级变量类型/" title="link to post.title">Python基础-13_高级变量类型</a></h2>
+      <p class="excerpt">
+    
+      高级变量类型目标
+列表
+元组
+字典
+字符串
+公共方法
+变量高级
+
+知识点回顾
+Python 中数据类型可以分为 数字型 和 非数字型
+数字型
+整型 (int)
+浮点型（float）
+布尔型（bool） 
+真 True 非 0 数 —— 非零即真
+假 False 0
+
+
+复数型 (complex)
+主要用于科学计算，例如：平面场问题、波动问题、电感电容等问题
+
+
+
+
+非数字型
+
+字符串
+列表
+元组
+
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-13T03:00:00.000Z" class="post-list__meta--date date">2018-08-13</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/13/13_高级变量类型/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/12/12_函数基础/" title="link to post.title">Python基础-12_函数基础</a></h2>
+      <p class="excerpt">
+    
+      函数基础目标
+函数的快速体验
+函数的基本使用
+函数的参数
+函数的返回值
+函数的嵌套调用
+在模块中定义函数
+
+01. 函数的快速体验1.1 快速体验
+所谓函数，就是把 具有独立功能的代码块 组织为一个小模块，在需要的时候 调用
+函数的使用包含两个步骤：
+定义函数 —— 封装 独立的功能
+调用函数 —— 享受 封装 的成果
+
+
+函数的作用，在开发程序时，使用函数可以提高编写的效率以及代码的 重用
+
+演
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-12T03:00:00.000Z" class="post-list__meta--date date">2018-08-12</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/12/12_函数基础/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/11/11_循环/" title="link to post.title">Python基础-11_循环</a></h2>
+      <p class="excerpt">
+    
+      循环目标
+程序的三大流程
+while 循环基本使用
+break 和 continue
+while 循环嵌套
+
+01. 程序的三大流程
+在程序开发中，一共有三种流程方式：
+顺序 —— 从上向下，顺序执行代码
+分支 —— 根据条件判断，决定执行代码的 分支
+循环 —— 让 特定代码 重复 执行
+
+
+
+
+02. while 循环基本使用
+循环的作用就是让 指定的代码 重复的执行
+while 循环最常用的
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-11T03:00:00.000Z" class="post-list__meta--date date">2018-08-11</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/11/11_循环/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/10/10_运算符/" title="link to post.title">Python基础-10_运算符</a></h2>
+      <p class="excerpt">
+    
+      运算符目标
+算数运算符
+比较（关系）运算符
+逻辑运算符
+赋值运算符
+运算符的优先级
+
+数学符号表链接：https://zh.wikipedia.org/wiki/数学符号表
+01. 算数运算符
+是完成基本的算术运算使用的符号，用来处理四则运算
+
+
+
+
+运算符
+描述
+实例
+
+
+
+
++
+加
+10 + 20 = 30
+
+
+-
+减
+10 - 20 = -10
+
+
+*
+乘
+10 * 20 = 200
+
+
+/
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-10T03:00:00.000Z" class="post-list__meta--date date">2018-08-10</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/10/10_运算符/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/09/09_判断（if）语句/" title="link to post.title">Python基础-09_判断（if）语句</a></h2>
+      <p class="excerpt">
+    
+      判断（if）语句目标
+开发中的应用场景
+if 语句体验
+if 语句进阶
+综合应用
+
+01. 开发中的应用场景生活中的判断几乎是无所不在的，我们每天都在做各种各样的选择，如果这样？如果那样？……
+
+
+程序中的判断
+1234567891011121314if 今天发工资:    先还信用卡的钱    if 有剩余:        又可以happy了，O(∩_∩)O哈哈~    else:       
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-09T03:00:00.000Z" class="post-list__meta--date date">2018-08-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/09/09_判断（if）语句/">继续阅读</a></div>
+      <hr class="post-list__divider">
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/09/08_变量的命名/" title="link to post.title">Python基础-08_变量的命名</a></h2>
+      <p class="excerpt">
+    
+      变量的命名目标
+标识符和关键字
+变量的命名规则
+
+0.1 标识符和关键字1.1 标识符
+标示符就是程序员定义的 变量名、函数名
+名字 需要有 见名知义 的效果，见下图：
+
+
+
+标示符可以由 字母、下划线 和 数字 组成
+不能以数字开头
+不能与关键字重名
+
+思考：下面的标示符哪些是正确的，哪些不正确为什么？
+123456789101112131415fromNo12from#12my_Boolean
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-09T03:00:00.000Z" class="post-list__meta--date date">2018-08-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/09/08_变量的命名/">继续阅读</a></div>
       <hr class="post-list__divider">
     </li>
   
     
   </ol>
 
+
+  <nav class="pagination" role="navigation">
+    
+    <span class="pagination__page-number">  1 / 2 </span>
+    
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/tags/总结/page/2/">Next &rarr;</a>
+    
+  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },

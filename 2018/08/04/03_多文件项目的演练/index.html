@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Python基础-03_多文件项目的演练 | Christinao</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Python基础-03_多文件项目的演练 | Christinao">
+    <meta name="twitter:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Python基础-03_多文件项目的演练 | Christinao">
+    <meta property="og:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    
+    <meta name="author" content="Christinao">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Christinao" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://christiano.cn/2018/08/04/03_多文件项目的演练/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Christinao 的主页"><img src="/images/avatar.jpg" width="80" alt="Christinao logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Christinao">Christinao</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, Stay foolish</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">我挥舞着键盘和本子，<br>发誓要把世界写个明明白白。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/JohnGreenn" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-08-04T04:00:00.000Z" class="post-list__meta--date date">2018-08-04</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Python基础-03_多文件项目的演练</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="多文件项目的演练"><a href="#多文件项目的演练" class="headerlink" title="多文件项目的演练"></a>多文件项目的演练</h1><ul>
+<li>开发 <strong>项目</strong> 就是开发一个 <strong>专门解决一个复杂业务功能的软件</strong></li>
+<li>通常每 <strong>一个项目</strong> 就具有一个 <strong>独立专属的目录</strong>，用于保存 <strong>所有和项目相关的文件</strong><ul>
+<li>一个项目通常会包含 <strong>很多源文件</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+<li>在项目中添加多个文件，并且设置文件的执行</li>
+</ul>
+<h2 id="多文件项目演练"><a href="#多文件项目演练" class="headerlink" title="多文件项目演练"></a>多文件项目演练</h2><ol>
+<li>在 <code>01_Python基础</code> 项目中新建一个 <code>hm_02_第2个Python程序.py</code> </li>
+<li>在 <code>hm_02_第2个Python程序.py</code> 文件中添加一句 <code>print(&quot;hello&quot;)</code></li>
+<li><strong>点击右键执行</strong> <code>hm_02_第2个Python程序.py</code></li>
+</ol>
+<p><img src="media/14957760846222/001_%E8%AE%A9%E9%80%89%E4%B8%AD%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%8F%AF%E4%BB%A5%E6%89%A7%E8%A1%8C.png" alt="001_让选中的程序可以执行-w662"></p>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><ul>
+<li>在 <code>PyCharm</code> 中，要想让哪一个 <code>Python</code> 程序能够执行，必须首先通过 <strong>鼠标右键的方式执行</strong> 一下</li>
+<li>对于初学者而言，在一个项目中设置多个程序可以执行，是非常方便的，可以方便对不同知识点的练习和测试</li>
+<li>对于商业项目而言，通常在一个项目中，只有一个 <strong>可以直接执行的 Python 源程序</strong></li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/08/05/04_注释/" title="Python基础-05_注释">Python基础-05_注释</a></h2>
+                <p class="excerpt">
+                
+                注释目标
+注释的作用
+单行注释（行注释）
+多行注释（块注释）
+
+01. 注释的作用
+使用用自己熟悉的语言，在程序中对某些代码进行标注说明，增强程序的可读性
+
+
+02. 单行注释(行注释)
+以 # 开头，# 右边的所有东西都被当做说明文字，而不是真正要执行的程序，只起到辅助说明作用
+
+示例代码如下：
+
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-08-05T03:00:00.000Z" class="post-list__meta--date date">2018-08-05</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/05/04_注释/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/08/03/02_第一个 Python 程序/" title="Python基础-02_第一个Python程序">Python基础-02_第一个Python程序</a></h2>
+                <p class="excerpt">
+                
+                第一个 Python 程序目标
+第一个 HelloPython 程序
+Python 2.x 与 3​​.x 版本简介
+执行 Python 程序的三种方式
+解释器 —— python / python3
+交互式 —— ipython
+集成开发环境 —— PyCharm
+
+
+
+01. 第一个 Hello
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-08-03T04:00:00.000Z" class="post-list__meta--date date">2018-08-03</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Python/">Python</a>, <a class="tag-link" href="/tags/总结/">总结</a>
+</span><a class="btn-border-small" href="/2018/08/03/02_第一个 Python 程序/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'chritiano'; 
+      
+  var disqus_identifier = '/2018/08/04/03_多文件项目的演练/';
+  var disqus_title = 'Python基础-03_多文件项目的演练';
+  var disqus_url = 'http://christiano.cn/2018/08/04/03_多文件项目的演练/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Christinao - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建， 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d267e0894afecccc89fcbe5096ea3887";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
