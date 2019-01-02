@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>jQuery学习笔记 | Christinao</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="jQuery学习笔记 | Christinao">
+    <meta name="twitter:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="jQuery学习笔记 | Christinao">
+    <meta property="og:description" content="我挥舞着键盘和本子，&lt;br /&gt;发誓要把世界写个明明白白。">
+
+    
+    <meta name="author" content="Christinao">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Christinao" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://christiano.cn/2019/01/02/jQuery/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Christinao 的主页"><img src="/images/avatar.jpg" width="80" alt="Christinao logo" class="panel-cover__logo logo"></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Christinao">Christinao</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Stay hungry, Stay foolish</span>
+        
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">我挥舞着键盘和本子，<br>发誓要把世界写个明明白白。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/JohnGreenn" title="GitHub" target="_blank">
+      <i class="social fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com" title="Twitter" target="_blank">
+      <i class="social fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class="social fa fa-rss"></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-01-02T10:46:00.000Z" class="post-list__meta--date date">2019-01-02</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/前端/">前端</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">jQuery学习笔记</h1>
+  </header>
+
+  <section class="post">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=570074859&auto=0&height=66" style="margin-left: -10px;"></iframe>
+
+<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1540818887671&amp;di=113d714015d2d5419fe73a1052a678d9&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.desktx.cc%2Fwapfile%2Fpc%2F161213%2Fbigpic%2F584e0d4f485ae.jpg" alt=""></p>
+<h1 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h1><p>学习目录</p>
+<p>1.jQuery介绍</p>
+<p>2.具体内容</p>
+<p>3.面试题</p>
+<ol>
+<li>选择器</li>
+<li>筛选器</li>
+<li>样式操作</li>
+<li>文本操作</li>
+<li>属性操作</li>
+<li>文档处理</li>
+<li>事件</li>
+<li>动画效果</li>
+<li>插件</li>
+<li>each、data、Ajax</li>
+</ol>
+<a id="more"></a>
+<h2 id="jQuery介绍"><a href="#jQuery介绍" class="headerlink" title="jQuery介绍"></a>jQuery介绍</h2><p>jQuery是一个快速、简洁的JavaScript框架。<br>jQuery使用户能够更方便地处理HTML Document、Events、实现动画效果、方便地进行Ajax交互，能够极大地简化JavaScript编程。它的宗旨就是：“Write less, do more.“</p>
+<h2 id="jQuery内容"><a href="#jQuery内容" class="headerlink" title="jQuery内容"></a>jQuery内容</h2><p>基础语法： $(selector).action()</p>
+<h3 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h3><p>id选择器：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#id"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>标签选择器：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"tagName"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>class选择器：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".className"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>配合使用：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"div.c1"</span>)  // 找到有c1 <span class="class"><span class="keyword">class</span>类的<span class="title">div</span>标签</span></span><br></pre></td></tr></table></figure></p>
+<p>所有元素选择器：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"*"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>组合选择器：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#id, .className, tagName"</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="层级选择器"><a href="#层级选择器" class="headerlink" title="层级选择器"></a>层级选择器</h3><p>x和y可以为任意选择器</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"x y"</span>);// x的所有后代y（子子孙孙）</span><br><span class="line">$(<span class="string">"x &gt; y"</span>);// x的所有儿子y（儿子）</span><br><span class="line">$(<span class="string">"x + y"</span>)// 找到所有紧挨在x后面的y</span><br><span class="line">$(<span class="string">"x ~ y"</span>)// x之后所有的兄弟y</span><br></pre></td></tr></table></figure>
+<h3 id="层级选择器-1"><a href="#层级选择器-1" class="headerlink" title="层级选择器"></a>层级选择器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[attribute]</span><br><span class="line">[attribute=value]// 属性等于</span><br><span class="line">[attribute!=value]// 属性不等于</span><br></pre></td></tr></table></figure>
+<p><strong>例子：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 示例</span><br><span class="line">&lt;input type=<span class="string">"text"</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">"password"</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">"checkbox"</span>&gt;</span><br><span class="line">$(<span class="string">"input[type='checkbox']"</span>);// 取到checkbox类型的input标签</span><br><span class="line">$(<span class="string">"input[type!='text']"</span>);// 取到类型不是text的input标签</span><br></pre></td></tr></table></figure>
+<h3 id="基本筛选器"><a href="#基本筛选器" class="headerlink" title="基本筛选器"></a>基本筛选器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">:first // 第一个</span><br><span class="line">:last // 最后一个</span><br><span class="line">:eq(index)// 索引等于index的那个元素</span><br><span class="line">:even // 匹配所有索引值为偶数的元素，从 <span class="number">0</span> 开始计数</span><br><span class="line">:odd // 匹配所有索引值为奇数的元素，从 <span class="number">0</span> 开始计数</span><br><span class="line">:gt(index)// 匹配所有大于给定索引值的元素</span><br><span class="line">:lt(index)// 匹配所有小于给定索引值的元素</span><br><span class="line">:<span class="keyword">not</span>(元素选择器)// 移除所有满足<span class="keyword">not</span>条件的标签</span><br><span class="line">:has(元素选择器)// 选取所有包含一个或多个标签在其内的标签(指的是从后代元素找)</span><br></pre></td></tr></table></figure>
+<p><strong>例子：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"div:has(h1)"</span>)// 找到所有后代中有h1标签的div标签</span><br><span class="line">$(<span class="string">"div:has(.c1)"</span>)// 找到所有后代中有c1样式类的div标签</span><br><span class="line">$(<span class="string">"li:not(.c1)"</span>)// 找到所有不包含c1样式类的li标签</span><br><span class="line">$(<span class="string">"li:not(:has(a))"</span>)// 找到所有后代中不含a标签的li标签</span><br></pre></td></tr></table></figure>
+<h3 id="表单筛选器"><a href="#表单筛选器" class="headerlink" title="表单筛选器"></a>表单筛选器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">:text</span><br><span class="line">:password</span><br><span class="line">:file</span><br><span class="line">:radio</span><br><span class="line">:checkbox</span><br><span class="line"></span><br><span class="line">:submit</span><br><span class="line">:reset</span><br><span class="line">:button</span><br></pre></td></tr></table></figure>
+<p><strong>例子：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">":checkbox"</span>)  // 找到所有的checkbox</span><br></pre></td></tr></table></figure>
+<p>表单对象属性：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:enabled</span><br><span class="line">:disabled</span><br><span class="line">:checked</span><br><span class="line">:selected</span><br></pre></td></tr></table></figure></p>
+<p><strong>例子：</strong><br>找到可用的input标签</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;form&gt;</span><br><span class="line">  &lt;input name=<span class="string">"email"</span> disabled=<span class="string">"disabled"</span> /&gt;</span><br><span class="line">  &lt;input name=<span class="string">"id"</span> /&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">$(<span class="string">"input:enabled"</span>)  // 找到可用的input标签</span><br></pre></td></tr></table></figure>
+<p> 找到被选中的option：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;select id=<span class="string">"s1"</span>&gt;</span><br><span class="line">  &lt;option value="beijing"&gt;北京市&lt;/option&gt;</span><br><span class="line">  &lt;option value="shanghai"&gt;上海市&lt;/option&gt;</span><br><span class="line">  &lt;option selected value="guangzhou"&gt;广州市&lt;/option&gt;</span><br><span class="line">  &lt;option value="shenzhen"&gt;深圳市&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br><span class="line"></span><br><span class="line">$(<span class="string">":selected"</span>)  // 找到所有被选中的option</span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/11/25/CSS/" title="CSS内容汇总">CSS内容汇总</a></h2>
+                <p class="excerpt">
+                
+                
+课程目标:
+
+学会使用CSS选择器
+熟记CSS样式和外观属性
+熟练掌握CSS各种选择器
+熟练掌握CSS各种选择器
+熟练掌握CSS三种显示模式
+熟练掌握CSS背景属性
+熟练掌握CSS三大特性
+熟练掌握CSS盒子模型
+熟练掌握CSS浮动10.熟练掌握CSS定位11.熟练掌握CSS高级技巧强化CSS
+
+
+typora-copy-images-to: media
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-11-25T03:20:00.000Z" class="post-list__meta--date date">2018-11-25</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/CSS/">CSS</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+</span><a class="btn-border-small" href="/2018/11/25/CSS/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'chritiano'; 
+      
+  var disqus_identifier = '/2019/01/02/jQuery/';
+  var disqus_title = 'jQuery学习笔记';
+  var disqus_url = 'http://christiano.cn/2019/01/02/jQuery/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2019 Christinao - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建， 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d267e0894afecccc89fcbe5096ea3887";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
